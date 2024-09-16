@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar with Logo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            padding: 5px;
+            background-color: white;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .search-input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 10px;
+            width: 300px;
+            border-radius: 25px;
+        }
+
+        .search-input::placeholder {
+            color: #aaa;
+        }
+
+        .search-container:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <img src="https://via.placeholder.com/40" alt="Logo" class="logo">
+        <input type="text" class="search-input" placeholder="Search...">
+    </div>
+</body>
+</html>
